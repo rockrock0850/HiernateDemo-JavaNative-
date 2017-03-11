@@ -1,2 +1,2 @@
 # HiernateDemo-JavaNative-
-使用Java Native Code實作
+使用Java Native Code實作Hibernate
