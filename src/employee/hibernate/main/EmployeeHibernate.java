@@ -40,9 +40,9 @@ public class EmployeeHibernate {
 		 */
 		
 		System.out.println("******* UPDATE *******");
-		long id = 3;
+		long id = 41;
 		employee = employeeDao.select(id);
-		employee.setFirstname("Bibert");
+		employee.setFirstName("Bibert");
 		employee = employeeDao.update(employee);
 		System.out.println("UPDATE: " + ShareTool.toStringBuilder(employee));
 		System.out.println();

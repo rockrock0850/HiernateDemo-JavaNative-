@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 2016/7/7 ?W?? 10:06:16 by Hibernate Tools 5.1.0.Alpha1 -->
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 12, 2017 12:55:07 AM by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="Employee" table="employee" catalog="DEV_TEST" optimistic-lock="version">
+    <class name="employee.hibernate.entity.Employee" table="employee" catalog="dev_test">
         <id name="id" type="java.lang.Long">
             <column name="id" />
             <generator class="identity" />
         </id>
-        <property name="firstname" type="string">
-            <column name="firstname" length="50" />
+        <property name="firstName" type="string">
+            <column name="first_name" length="50" />
         </property>
-        <property name="lastname" type="string">
-            <column name="lastname" length="50" />
+        <property name="lastName" type="string">
+            <column name="last_name" length="50" />
         </property>
         <property name="birthDate" type="date">
             <column name="birth_date" length="10" not-null="true" />
         </property>
         <property name="cellPhone" type="string">
-            <column name="cell_phone" length="15" not-null="true" />
+            <column name="cell_phone" length="15" />
         </property>
     </class>
 </hibernate-mapping>
